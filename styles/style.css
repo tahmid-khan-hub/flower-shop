@@ -17,7 +17,14 @@
     font-weight: 700;
     color: white;
     border: none;
+    /* transform and transition in button */
+    transition: transform 0.2s, background-color 0.2s;
 }
+.btn-primary:hover{
+    transform: scale(1.1);
+    background-color: rgb(180, 60, 86);
+}
+
 .text-color{
     color: rgba(39, 39, 39, 0.6);
 }
@@ -77,9 +84,15 @@ header{
     gap: 24px;
     margin-bottom: 180px;
 }
+
 .first-flower,.second-flower,.third-flower{
     border-radius: 300px 300px 0px 0px;
     width: 464px;
+    transform: scale(1);
+    transition: transform 0.2s;
+}
+.first-flower:hover,.second-flower:hover,.third-flower:hover{
+    transform: scale(0.8);
 }
 .first-flower{
     background: rgba(167, 33, 98, 0.15);
@@ -120,7 +133,13 @@ header{
 .delivery-boy,.delivery-flower,.delivery-support{
     text-align: center;
     margin: auto;
+    transition: background-color 0.2s;
 }
+.delivery-boy:hover,.delivery-flower:hover,.delivery-support:hover{
+    transform: scale(1.1);
+    background-color: rgba(93, 79, 79, 0.37);
+}
+
 .delivery-boy>p,.delivery-flower>p,.delivery-support>p{
     font-weight: 600;
     font-size: 1.5rem;
@@ -192,9 +211,11 @@ header{
     }
     .rose{
         grid-template-columns: repeat(1,1fr);
-        margin-top: 300px;
+        margin-top: 0px;
         gap: 30px;
         height: auto;
+    }
+    .rose-section{
     }
     
 }
@@ -227,5 +248,6 @@ header{
     .rose{
         grid-template-columns: repeat(1,1fr);
         gap: 30px;
+        height: auto;
     }
 }
