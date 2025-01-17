@@ -126,6 +126,44 @@ header{
     font-size: 1.5rem;
 }
 
+/* rose section styles */
+.rose-section{
+    background-color: rgba(229, 84, 115, 0.05);
+}
+.rose{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    max-width: 1098px;
+    height: 620px;
+    margin: 0 auto;
+    gap: 186px;
+    margin-bottom: 128px;
+}
+.rose-section-description{
+    max-width: 594px;
+    margin: auto;
+    text-align: center;
+}
+.rose-section-description>h2{
+    font-weight: 800;
+    font-size: 2.1rem;
+}
+.off{
+   color: rgb(229, 84, 115); 
+}
+.rose-section-description>p{
+    line-height: 30px;
+    margin-bottom: 32px;
+}
+.rose-section-description>button{
+    font-size: 1.2rem;
+}
+.rose-img{
+    max-width: 318px;
+    margin: auto;
+    padding: 100px 0;
+}
+
 /* responsive mobile devices */
 @media screen and (max-width:576px) {
     .header{
@@ -148,11 +186,15 @@ header{
         width: 100%;
         margin-bottom: 40px;
     }
-    .three-flowers-name{
-        visibility: hidden;
-    }
     .support-section{
         grid-template-columns: repeat(1,1fr);
+        height: auto;
+    }
+    .rose{
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 300px;
+        gap: 30px;
+        height: auto;
     }
     
 }
@@ -177,5 +219,13 @@ header{
     .first-flower,.second-flower,.third-flower{
         margin: 0 auto;
         margin-bottom: 80px;
+    }
+    .support-section{
+        grid-template-columns: repeat(1,1fr);
+        height: auto;
+    }
+    .rose{
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
     }
 }
